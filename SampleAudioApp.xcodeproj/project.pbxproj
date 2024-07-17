@@ -14,6 +14,9 @@
 		5D3C4FC32C3421C50021287E /* SampleAudioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FC22C3421C50021287E /* SampleAudioAppTests.swift */; };
 		5D3C4FCD2C3421C50021287E /* SampleAudioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FCC2C3421C50021287E /* SampleAudioAppUITests.swift */; };
 		5D3C4FCF2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FCE2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift */; };
+		5DFAB40C2C47DF0800648B45 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */; };
+		5DFAB40E2C47DF5600648B45 /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */; };
+		5DFAB4102C47DFB600648B45 /* AES_Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		5D3C4FC82C3421C50021287E /* SampleAudioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAudioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3C4FCC2C3421C50021287E /* SampleAudioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAudioAppUITests.swift; sourceTree = "<group>"; };
 		5D3C4FCE2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAudioAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
+		5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_Algo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,11 @@
 			children = (
 				5D3C4FB12C3421C30021287E /* SampleAudioAppApp.swift */,
 				5D3C4FB32C3421C30021287E /* ContentView.swift */,
+				5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */,
 				5D3C4FB52C3421C40021287E /* Assets.xcassets */,
 				5D3C4FB72C3421C40021287E /* Preview Content */,
+				5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */,
+				5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */,
 			);
 			path = SampleAudioApp;
 			sourceTree = "<group>";
@@ -257,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFAB4102C47DFB600648B45 /* AES_Algo.swift in Sources */,
 				5D3C4FB42C3421C30021287E /* ContentView.swift in Sources */,
+				5DFAB40C2C47DF0800648B45 /* ContactsManager.swift in Sources */,
+				5DFAB40E2C47DF5600648B45 /* ContactsScreen.swift in Sources */,
 				5D3C4FB22C3421C30021287E /* SampleAudioAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -422,20 +434,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleAudioApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 274V7YW5R7;
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to provide personalized recommendations and to allow you to share content with your friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for uploading audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.narayan.SampleAudioApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.narayan.RecogniseAudioApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,20 +467,24 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleAudioApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 274V7YW5R7;
+				DEVELOPMENT_TEAM = G56QYJ7ZRJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSContactsUsageDescription = "We need access to your contacts to provide personalized recommendations and to allow you to share content with your friends.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone access for uploading audio";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition to transcribe your audio.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.narayan.SampleAudioApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.narayan.RecogniseAudioApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
