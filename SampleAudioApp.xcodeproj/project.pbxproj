@@ -14,6 +14,7 @@
 		5D3C4FC32C3421C50021287E /* SampleAudioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FC22C3421C50021287E /* SampleAudioAppTests.swift */; };
 		5D3C4FCD2C3421C50021287E /* SampleAudioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FCC2C3421C50021287E /* SampleAudioAppUITests.swift */; };
 		5D3C4FCF2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3C4FCE2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift */; };
+		5DA47BC92C491DD7004C8E9D /* CustomAuidoSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA47BC82C491DD7004C8E9D /* CustomAuidoSDK.swift */; };
 		5DFAB40C2C47DF0800648B45 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */; };
 		5DFAB40E2C47DF5600648B45 /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */; };
 		5DFAB4102C47DFB600648B45 /* AES_Algo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */; };
@@ -47,6 +48,7 @@
 		5D3C4FC82C3421C50021287E /* SampleAudioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleAudioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3C4FCC2C3421C50021287E /* SampleAudioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAudioAppUITests.swift; sourceTree = "<group>"; };
 		5D3C4FCE2C3421C50021287E /* SampleAudioAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAudioAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DA47BC82C491DD7004C8E9D /* CustomAuidoSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuidoSDK.swift; sourceTree = "<group>"; };
 		5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
 		5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES_Algo.swift; sourceTree = "<group>"; };
@@ -102,11 +104,12 @@
 			children = (
 				5D3C4FB12C3421C30021287E /* SampleAudioAppApp.swift */,
 				5D3C4FB32C3421C30021287E /* ContentView.swift */,
+				5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */,
 				5DFAB40B2C47DF0800648B45 /* ContactsManager.swift */,
+				5DA47BC82C491DD7004C8E9D /* CustomAuidoSDK.swift */,
+				5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */,
 				5D3C4FB52C3421C40021287E /* Assets.xcassets */,
 				5D3C4FB72C3421C40021287E /* Preview Content */,
-				5DFAB40D2C47DF5600648B45 /* ContactsScreen.swift */,
-				5DFAB40F2C47DFB600648B45 /* AES_Algo.swift */,
 			);
 			path = SampleAudioApp;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				5DFAB4102C47DFB600648B45 /* AES_Algo.swift in Sources */,
 				5D3C4FB42C3421C30021287E /* ContentView.swift in Sources */,
+				5DA47BC92C491DD7004C8E9D /* CustomAuidoSDK.swift in Sources */,
 				5DFAB40C2C47DF0800648B45 /* ContactsManager.swift in Sources */,
 				5DFAB40E2C47DF5600648B45 /* ContactsScreen.swift in Sources */,
 				5D3C4FB22C3421C30021287E /* SampleAudioAppApp.swift in Sources */,
